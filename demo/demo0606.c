@@ -78,45 +78,5 @@ int main()
   // }
 
   // extern 声明外部符号
-
-  // while语句
-  // int ch = 0;
-  // while ((ch = getchar()) != EOF)
-  // {
-  //   putchar(ch);
-  // }
-
-  // int ret = 0;
-  // int ch = 0;
-  // char password[20] = {0};
-  // printf("请输入密码：");
-  // scanf("%s", password);
-  // // 输入密码回车后getchar会直接读取\n,需要使用先使用getchar消除\n
-  // while ((ch = getchar()) != '\n')
-  // {
-  //   ;
-  // }
-  // printf("请确认y/n:");
-  // ret = getchar();
-  // if (ret == 'y')
-  // {
-  //   printf("确认");
-  // }
-  // else
-  // {
-  //   printf("不确认");
-  // }
-
-  int ch = 0;
-  while ((ch = getchar()) != EOF)
-  {
-    if (ch < '0' || ch > '9')
-    {
-      continue;
-    }
-
-    putchar(ch);
-  }
-
   return 0;
 }
