@@ -42,7 +42,6 @@ C/C++ Study
 ```
 
 ## MAC tasks.json
-
 ```
 {
 	"version": "2.0.0",
@@ -91,6 +90,12 @@ C/C++ Study
 		}
 	]
 }
+```
+
+## WIN tasks.json
+```
+多c/c++文件 "${file}" 替换为 "${workspaceFolder}\\*.c"  "${workspaceFolder}\\*.c++"
+多c/c++文件 "${fileDirname}/${fileBasenameNoExtension}" 替换为 "${workspaceFolder}\\${workspaceRootFolderName}.exe"
 ```
 
 ## MAC setting.json
