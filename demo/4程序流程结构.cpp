@@ -185,7 +185,24 @@ int main()
   // }
 
   // 跳转语句
-  // break
+  // break 跳出循环，循环终止
+  // continue 跳过本次循环，循环不终止
+  // for (int i = 0; i < 100; i++)
+  // {
+  //   if (i % 2 == 0)
+  //   {
+  //     continue;
+  //   }
+  //   cout << i << endl;
+  // }
+  // goto 无条件跳转语句
+  cout << "1" << endl;
+  goto FLAG;
+  cout << "2" << endl;
+  cout << "3" << endl;
+  cout << "4" << endl;
+FLAG:
+  cout << "5" << endl;
 
   return 0;
 }
