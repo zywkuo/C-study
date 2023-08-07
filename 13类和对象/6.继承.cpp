@@ -221,6 +221,38 @@ void test05()
   Son6 s;
 };
 
+class Animal
+{
+public:
+  int m_Age;
+};
+
+class Sheep : virtual public Animal
+{
+};
+
+class Tuo : virtual public Animal
+{
+};
+
+class SheepTuo : public Sheep, public Tuo
+{
+};
+
+void test06()
+{
+  SheepTuo st;
+  st.Sheep::m_Age = 18;
+  st.Tuo::m_Age = 28;
+
+  cout << "st.Sheep::m_Age = " << st.Sheep::m_Age << endl;
+  cout << "st.Tuo::m_Age = " << st.Tuo::m_Age << endl;
+
+  // 继承两个，以哪个为准？？？？？？
+  // 利用虚继承  virtual ，解决菱形继承的问题
+  cout << "st.m_Age = " << st.m_Age << endl;
+};
+
 int main()
 {
   test01();
@@ -239,6 +271,9 @@ int main()
 
   // 多继承语法
   test05();
+
+  // 菱形继承
+  test06();
 
   return 0;
 };
