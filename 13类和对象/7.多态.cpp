@@ -11,6 +11,13 @@ public:
   // 2、抽象类的子类 必须要重写父类中的纯虚函数，否则也属于抽象类
   // virtual void func() = 0;
 
+  // 虚析构和纯虚析构
+  // virtual ~Animal() = {
+
+  // };
+
+  // virtual ~Animal() = 0;
+
   virtual void speak()
   {
     cout << "动物在说话" << endl;
